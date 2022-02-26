@@ -7,7 +7,6 @@ public class 增量元素之间的最大差值 {
             int befMax = nums[nums.length - 1];
             int rst = - Integer.MAX_VALUE;
             for (int i = nums.length - 2; i >= 0; i--) {
-
                 rst = Math.max(befMax - nums[i], rst);
                 befMax = Math.max(nums[i], befMax);
             }
